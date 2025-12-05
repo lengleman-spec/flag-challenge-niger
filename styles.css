@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+:root {
+  --orange: #e15307;
+  --white: #fff;
+  --green: #10af2a;
+  --flag-height: 200px;
+}
+
+/* Aspect ratio - 6:7 */
+/* calc(var(--flag-height) * 7/6 */
+
+.flag {
+  width: calc(var(--flag-height) * 7 / 6);
+  height: var(--flag-height);
+  background-color: white;
+  border: 4px solid red;
+  margin: 3rem auto;
+}
+
+.stripe {
+  height: calc(var(--flag-height) * 1 / 3);
+}
+
+.orange {
+  background-color: var(--orange);
+}
