@@ -42,7 +42,8 @@
 
 .circle {
   background-color: var(--orange);
-  height: 50px;
-  width: 50px;
+  width: calc(var(--flag-height) / 3 * 0.85);
+  height: calc(var(--flag-height) / 3 * 0.85);
   border-radius: 50%;
 }
+/* height and width (in .circle) are the same formula because we're making a perfect circle, which can be comprised of a perfect square with rounded corners. */
